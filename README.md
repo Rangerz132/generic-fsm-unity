@@ -13,6 +13,8 @@ The player has two main states:
 - Idle State: In this state, the player is stationary.
 - Walk State: When the player moves, it transitions to the walk state and moves in the direction specified by the user input.
 
+![](Assets/README/Scene_01.gif)
+
 ## Scene 02
 
 In this scene, an enemy character is set up to patrol a predefined route within the scene.
@@ -21,3 +23,5 @@ The enemy has two main states:
 
 - Looking State: In this state, the enemy is looking around.
 - Patrolling State: In this state, the enemy follows a predefined patrol route.
+
+![](Assets/README/Scene_02.gif)
