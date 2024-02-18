@@ -28,20 +28,6 @@ The enemy has two main states:
 
 ## Implementation
 
-To implement the generic state machine with the provided classes (StateMachineManager, BaseState, PlayerStateMachine, PlayerIdleState), follow these steps:
-
-1. Define State Enum: Create an enum to represent the possible states of your state machine. For example, PlayerStates.
-
-2. Create State Classes: Create classes that inherit from BaseState to define the behavior for each state. For example, PlayerIdleState.
-
-3. Implement State Behavior: Override the abstract methods in your state classes (EnterState, UpdateState, FixedUpdateState, ExitState) to define the behavior for each state.
-
-4. Create State Machine Manager: Create a class that inherits from StateMachineManager and provides the necessary generic arguments. For example, PlayerStateMachine.
-
-5. Initialize State Machine: In the constructor of your state machine manager, add initial states to the states dictionary.
-
-6. Manage State Changes: Use methods in your state machine manager (Initialize, UpdateState, ChangeState) to manage state transitions and update the current state.
-
 StateMachineManager is a generic class managing states for an entity. It uses an enum EState for state keys. It stores states in a dictionary and tracks the current and previous states. It initializes with an entity and can update and change states, calling state methods EnterState, UpdateState, and ExitState
 
 ```csharp
